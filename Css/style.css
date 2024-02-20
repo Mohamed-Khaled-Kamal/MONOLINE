@@ -96,6 +96,14 @@ body{
 
 /*/////////////////////////////////////////////////////^^sec2^^////////////////////////////////////////////////////*/
 
+.form-head{
+    background-color: #e2d1c391;
+}
+
+.form-sec{
+    background-color: #e2d1c3;
+}
+
 .toltip-btnn{
     position: relative;
 }
