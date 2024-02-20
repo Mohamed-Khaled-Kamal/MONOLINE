@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="stylesheet" href="Css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MONOLINE</title>
+
+</head>
+
+<body>
+
+    
+<nav class="nav navbar navbar-expand-lg fixed-top "><!-- Start nav -->
+        <div class="container-fluid"><!-- start container-fluid -->
+          <a class="navbar-brand" href="file:///C:/Users/UG/Desktop/MONOLINE/index.html#"><img class="logo " src="imges/mono logo.png" alt="big-bite" draggable="false"></a>
+          <button class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"><!-- start navbar-support-content -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 "> <!-- start nav ul -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="file:///C:/Users/UG/Desktop/MONOLINE/index.html#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PROP">Properties</a>
+              </li>
+              <li class="nav-item dropdown dropli">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="first-w">S</span>ervices
+                </a>
+                <ul class="drop dropdown-menu fs-5 "><!-- start dropdown-menu -->
+                  <li><a class="dropdown-item" href="#LFH">Looking For House</a></li>
+                  <li><a class="dropdown-item" href="#HFI">Sell Your House</a></li>
+                  <li><a class="dropdown-item" href="#BYDH">Build Your Own</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">More...</a></li>
+                </ul><!-- end dropdown-menu -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SER">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#CONT">Contacts</a>
+              </li>
+            </ul><!-- end nav ul -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button type="button" class="btn btn-light me-1">Search</button>
+              <button type="button" class="btn btn-light ms-1 me-1" data-bs-toggle="modal" data-bs-target="#logincontent">Login</button>
+              <button class="btn btn-light ms-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fas fa-list"></i>
+              </button>
+
+
+              
+            </form>
+          </div><!-- end navbar-support-content -->
+        </div><!-- End container-fluid -->
+</nav><!-- end nav -->
+
+<!--/////////////////////////////////////////////////////////^--HEADER--^////////////////////////////////////////////////////////////-->
+<div class="modal fade" id="logincontent"><!--start Modal login  -->
+  <div class="modal-dialog"><!-- Start Modal-dialog -->
+    <div class="modal-content"><!-- Start Modal-content -->
+
+      
+      <div class="modal-header"><!-- Start Modal-header -->
+        <h4 class="modal-title">login form</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div><!-- End Modal-header -->
+
+      
+      <div class="modal-body"><!-- Start Modal-body -->
+
+        <label for="email" class="form-label">email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <label for="password" class="form-label">password</label>
+        <input type="password" class="form-control" id="password" placeholder="******">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+          <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+        </div>
+
+      </div><!-- End Modal-body -->
+
+      
+      <div class="modal-footer d-flex justify-content-between"><!-- Start Modal-footer -->
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">login</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div><!-- End Modal-footer -->
+
+    </div><!-- End Modal-content -->
+  </div><!-- End Modal-dialog -->
+</div><!-- end Modal login -->
+<!--/////////////////////////////////////////////////////////^--Modal login--^////////////////////////////////////////////////////////////-->
+
+        <section class="fixed-links text-capitalize"><!-- start fixed links -->
+          <div class="offcanvas offcanvas-end bg-transparent bg-opacity-25" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"> <!-- start side links -->
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasExampleLabel">contact links</h3>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"> <!-- start side links body -->
+              <div><!-- start links -->
+                <ul class="list-unstyled display-3 ">
+                  <li class="mb-5"><a href="#" class="text-primary text-decoration-none "><i class="fab fa-facebook"></i> facebook</a></li>
+                  <li class="mb-5"><a href="#" class="text-info text-decoration-none"><i class="fab fa-twitter"></i> twitter</a></li>
+                  <li class="mb-5"><a href="#" class="text-danger text-decoration-none"><i class="fab fa-youtube"></i> youtube</a></i></li>
+                  <li class="mb-5"><a href="#" class="text-success text-decoration-none"><i class="fab fa-whatsapp"></i> whatsapp</a></li>
+                  <li class="mb-5"><a href="#" class="text-warning text-decoration-none"><i class="fab fa-google"></i> google</a></li>
+                  
+                </ul>
+              </div><!-- end links -->
+              
+            </div><!-- end side links body -->
+          </div><!-- end side links  -->
+          
+
+        </section><!--end fixed links  -->
+
+<!--/////////////////////////////////////////////////////////^--Links Modal--^////////////////////////////////////////////////////////////-->
+
+<section class="sec1 mb-4 mt-5 text-capitalize">
+
+  <div class="container-fluid" ><!-- start container-fluid -->
+
+    <div id="carousel-buttons" class="carousel slide" data-bs-ride="carousel" style="height: 90vh;"><!--  Start Carousel -->
+
+      
+      <div class="carousel-indicators"><!-- Start Indicators/dots -->
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#carousel-buttons" data-bs-slide-to="6"></button>
+      </div><!-- End Indicators/dots -->
+      
+      
+      <div class="carousel-inner h-100"><!-- Start The slideshow/carousel -->
+
+        <div class="carousel-item active h-100"><!-- start carousel item -->
+          <img src="imges/mono poster.jpg" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">monoline</h3>
+            <p>your gateway to building your real estate future</p>
+            <a href="file:///C:/Users/UG/Desktop/MONOLINE/index.html#" class="btn btn-primary">Visite Site</a>
+          </div>
+        </div><!-- end carousel item -->
+
+        <div class="carousel-item  h-100"><!-- start carousel item -->
+          <img src="imges/house.png" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">las vegas</h3>
+            <p>we had such a great time in LV!</p>
+            <a href="#PROP" class="btn btn-primary">Show Properties</a>
+          </div>
+        </div><!-- end carousel item -->
+
+        <div class="carousel-item h-100"><!-- start carousel item -->
+          <img src="imges/carsol .png" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">Chicago</h3>
+            <p>Thank you, Chicago!</p>
+            <a href="#PROP" class="btn btn-primary">Show Properties</a>
+          </div> 
+        </div><!-- end carousel item -->
+
+        <div class="carousel-item h-100"><!-- start carousel item -->
+          <img src="imges/carousel2.png" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">new york</h3>
+            <p>We love the Big Apple!</p>
+            <a href="#PROP" class="btn btn-primary">Show Properties</a>
+          </div>  
+        </div><!-- end carousel item -->
+
+        
+        <div class="carousel-item h-100"><!-- start carousel item -->
+          <img src="imges/carousel4.jpg" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">san francisco</h3>
+            <p>we walked on golden gate bridge</p>
+            <a href="#PROP" class="btn btn-primary">Show Properties</a>
+          </div>  
+        </div><!-- end carousel item -->
+        
+        <div class="carousel-item h-100"><!-- start carousel item -->
+          <img src="imges/carousel5.jpg" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">los angeles</h3>
+            <p>we had such a great time in LA!</p>
+            <a href="#PROP" class="btn btn-primary">Show Properties</a>
+          </div>  
+        </div><!-- end carousel item -->
+        
+        <div class="carousel-item h-100"><!-- start carousel item -->
+          <img src="imges/carousel3.jpg" alt="" draggable="false" class="d-block w-100 h-100">
+          <div class="carousel-caption bg-primary  bg-opacity-25 rounded-3">
+            <h3 class="display-5">build your own house</h3>
+            <p>we implement construction projects with high professionalism and excellent quality</p>
+            <a href="#BYDH" class="btn btn-primary">Fill Form</a>
+          </div>  
+        </div><!-- end carousel item -->
+
+      </div> <!-- End The slideshow/carousel -->
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-buttons" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-buttons" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div><!--  END Carousel -->
+
+    <div class="welcome p-5 pt-3  text-secondary rounded-bottom"><!-- Start Jumbotron -->
+      <img src="imges/mono logo.png" class="mb-2" alt="" style="height: 80px; width: 150px;"> 
+      <p>welcome to MONOLINE, the gateway to real estate and finance 
+        MONOLINE is your ideal destination to meet all your real estate needs
+        We offer you a wide range of integrated real estate services
+        We help you achieve your dream of owning your dream home
+        We offer easy financing solutions to suit all possibilities...</p> 
+      <div id="more" class="collapse">
+        we help you find a suitable property for rent at a reasonable price
+        we offer you the best real estate investment opportunities 
+        we implement construction projects with high professionalism and excellent quality
+      </div>
+      <a href="#more" class="btn btn-light" data-bs-toggle="collapse">Show More</a>
+      
+    </div><!-- End Jumbotron -->
+
+  </div><!-- END container-fluid -->
+
+</section><!-- END sec1 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC1--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec2 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="sec-head mt-4 p-5 mb-3 text-center rounded text-uppercase"><!-- start jumbotron -->
+
+      <h1 class="sec-head-t">monoline offer</h1>
+      
+    </div><!-- end jumbotron -->
+
+    <div class="accordion" id="accordionbar"> <!-- start accordion -->
+  <div class="accordion-item"> <!-- strart accordion-item -->
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button collapsed fs-5 fw-bold text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+        buy & rent
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse text-capitalize" aria-labelledby="heading1" data-bs-parent="#accordionbar">
+      <div class="accordion-body text-secondary">
+        <p>we offer you special offers on buying properties</p>
+        <p>We provide you with properties for rent in different locations at competitive prices</p>  
+      </div>
+    </div>
+  </div> <!-- end accordion-item -->
+  <div class="accordion-item"> <!-- start accordion-item -->
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button collapsed fs-5 fw-bold text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+        build your dream house
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse text-capitalize" aria-labelledby="heading2" data-bs-parent="#accordionbar">
+      <div class="accordion-body text-secondary">
+        <p>we implement construction projects with high professionalism and excellent quality</p>  
+      </div>
+    </div>
+  </div> <!-- end accordion-item -->
+  <div class="accordion-item"> <!-- start accordion-item -->
+    <h2 class="accordion-header" id="heading3">
+      <button class="accordion-button collapsed fs-5 fw-bold text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+        real estate finance
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse text-capitalize" aria-labelledby="heading3" data-bs-parent="#accordionbar">
+      <div class="accordion-body text-secondary">
+        <p>we offer easy financing solutions to suit all possibilities</p>
+        <p>we offer you guarantees on all our services</p> 
+      </div>
+    </div>
+  </div> <!-- end accordion-item -->
+</div> <!-- end accordion -->
+
+  </div><!-- end container-fluid -->
+
+</section><!--END sec2-->
+
+<!--/////////////////////////////////////////////////////////^--SEC2--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec3 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="mt-4 p-5  bg-success text-white text-center rounded-top bg-opacity-75 text-uppercase"><!-- start jumbotron -->
+
+      <h1 id="LFH">looking for your house</h1>
+      
+    </div><!-- end jumbotron -->
+
+    <div class="mb-3 p-5 bg-success rounded" ><!-- Start application sec -->
+      <h3 class="text-white mb-4">fill out the specifications of a home you are looking for and <span class="text-dark">press submit</span></h3>
+       
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">marital status</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>single</option>
+            <option>married</option>
+            <option>divorced</option>
+            <option>widow/er</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="sonsnums" class="form-label">sons</label>
+          <input type="number" class="form-control" id="sonsnums">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">house for</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Rent</option>
+            <option>Buy</option>
+            
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">space</label>
+          <input type="text" class="form-control" id="romnum">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">house type</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Studio</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">rooms</label>
+          <input type="number" class="form-control" id="romnum">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+                <br><br>
+                <label for="Textarea1">Comments</label>
+            <textarea class="form-control" id="Textarea1" rows="5" placeholder="Comments"></textarea>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="toltip-btnn btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#copy">Submit
+
+            <span class="tooltiptext">submit</span>
+          <span class="tooltiptext2">submited</span>
+          
+          </button>
+        </div>
+      </form>
+      
+      
+<div class="modal fade text-capitalize" id="copy"><!-- Strat Modal -->
+  <div class="modal-dialog"><!-- start modal-dialog -->
+    <div class="modal-content"><!-- start modal contant -->
+
+      
+      <div class="modal-header"><!-- Start modal Header -->
+        <h4 class="modal-title">monoline sayes</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div><!-- end modal header -->
+
+      
+      <div class="modal-body"><!--Start Modal body -->
+        your submission has been received!!!
+      </div><!-- end modal body -->
+
+    </div><!-- end modal contant -->
+  </div><!-- end modal dialog -->
+</div><!-- End Modal -->
+      
+    </div><!-- end application sec -->
+
+  </div><!-- end container-fluid -->
+
+</section><!-- end sec3 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC3--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec4 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="mt-4 p-5  bg-secondary text-white text-center text-uppercase rounded-top bg-opacity-75"><!-- start jumbotron -->
+
+      <h1 id="HFI">house for invest</h1>
+      
+    </div><!-- end jumbotron -->
+
+    <div class="mb-3 p-5 bg-secondary rounded" ><!-- Start application sec -->
+      <h3 class="text-white mb-4">fill out the specifications of the house you want to sell or rent and <span class="text-dark">press submit</span></h3>
+       
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">house for</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Rent(for invest)</option>
+            <option>Sell</option> 
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">space</label>
+          <input type="text" class="form-control" id="romnum">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">house type</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Studio</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">rooms</label>
+          <input type="number" class="form-control" id="romnum">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">price you expect</label>
+          <input type="text" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-12">
+          <label for="imagine house" class="form-label">img for your house</label>
+          <input type="file" class="form-control" id="imagine house" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+                <br><br>
+                <label for="Textarea1">Comments</label>
+            <textarea class="form-control" id="Textarea1" rows="5" placeholder="Comments"></textarea>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="toltip-btnn btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#copy">Submit
+
+            <span class="tooltiptext">submit</span>
+          <span class="tooltiptext2">submited</span>
+          
+          </button>
+        </div>
+      </form>
+      
+      
+<div class="modal fade text-capitalize" id="copy"><!-- Strat Modal -->
+  <div class="modal-dialog"><!-- start modal-dialog -->
+    <div class="modal-content"><!-- start modal contant -->
+
+      
+      <div class="modal-header"><!-- Start modal Header -->
+        <h4 class="modal-title">monoline sayes</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div><!-- end modal header -->
+
+      
+      <div class="modal-body"><!--Start Modal body -->
+        your submission has been received!!!
+      </div><!-- end modal body -->
+
+    </div><!-- end modal contant -->
+  </div><!-- end modal dialog -->
+</div><!-- End Modal -->
+      
+    </div><!-- end application sec -->
+
+  </div><!-- end container-fluid -->
+
+</section><!-- end sec4 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC4--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec5 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="mt-4 p-5  bg-warning text-white text-center text-uppercase rounded-top bg-opacity-75"><!-- start jumbotron -->
+
+      <h1 id="BYDH">build your dream home</h1>
+      
+    </div><!-- end jumbotron -->
+
+    <div class="mb-3 p-5 bg-warning rounded" ><!-- Start application sec -->
+      <h3 class="text-white mb-4">fill out the specifications of the house you want to build and <span class="text-dark">press submit</span></h3>
+       
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">marital status</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>single</option>
+            <option>married</option>
+            <option>divorced</option>
+            <option>widow/er</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="sonsnums" class="form-label">sons</label>
+          <input type="number" class="form-control" id="sonsnums">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">have land for your house?</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>yes</option>
+            <option>no</option>
+            
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">space</label>
+          <input type="text" class="form-control" id="romnum">
+        </div>
+        <div class="col-md-2">
+          <label for="inputState" class="form-label">house type</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+            <option>Studio</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="romnum" class="form-label">rooms</label>
+          <input type="number" class="form-control" id="romnum">
+        </div>
+        <div class="col-md-2">
+          <label for="bathnums" class="form-label">bathroom</label>
+          <input type="number" class="form-control" id="bathnums">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">do you want a grage?</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>yes</option>
+            <option>no</option>
+            
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">do you want a pool?</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>yes</option>
+            <option>no</option>
+            
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">do you want a garden</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>yes</option>
+            <option>no</option>
+            
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="imagine house" class="form-label">imagine for your house</label>
+          <input type="file" class="form-control" id="imagine house" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+                <br><br>
+                <label for="Textarea1">Comments</label>
+            <textarea class="form-control" id="Textarea1" rows="5" placeholder="Comments"></textarea>
+
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="toltip-btnn btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#copy">Submit
+
+            <span class="tooltiptext">submit</span>
+          <span class="tooltiptext2">submited</span>
+          
+          </button>
+        </div>
+      </form>
+      
+      
+<div class="modal fade text-capitalize" id="copy"><!-- Strat Modal -->
+  <div class="modal-dialog"><!-- start modal-dialog -->
+    <div class="modal-content"><!-- start modal contant -->
+
+      
+      <div class="modal-header"><!-- Start modal Header -->
+        <h4 class="modal-title">monoline sayes</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div><!-- end modal header -->
+
+      
+      <div class="modal-body"><!--Start Modal body -->
+        your submission has been received!!!
+      </div><!-- end modal body -->
+
+    </div><!-- end modal contant -->
+  </div><!-- end modal dialog -->
+</div><!-- End Modal -->
+      
+    </div><!-- end application sec -->
+
+  </div><!-- end container-fluid -->
+
+</section><!-- end sec4 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC5--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="break-line" style="height: 50vh;">
+
+
+</section><!-- end break-line -->
+
+<!--/////////////////////////////////////////////////////^--BREAK-LINE--^//////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec6 text-capitalize">
+
+  <div class="container-fluid">
+
+   
+
+      <div class="sec-head mt-4 p-5 mb-3 bg-primary text-white text-center rounded text-uppercase"><!-- start jumbotron -->
+  
+        <h1 id="PROP" class="sec-head-t">properties available</h1>
+        
+      </div><!-- end jumbotron -->
+  
+    </div><!-- end container-fluid -->
+      
+    <div class="container">
+           
+    <div class="row justify-content-around"><!-- start row -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/villa1.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/sale (1).png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Downtown, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Villa with Amazing View</h5>
+            <h5 class="card-title">5.500.000 $</h5>
+            <p class="card-text">Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood..</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 5 <i class="fas fa-bath ps-3"></i> 3 <i class="fas fa-expand-arrows-alt ps-3 "></i> 250ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person8-1-1-120x120.png" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">elana peria</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt border-3"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/home2.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/sale (1).png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Meadows Village, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Villa with Amazing View</h5>
+            <h5 class="card-title">210.000 $</h5>
+            <p class="card-text">Just steps away from QM2 express bus to Manhattan and local buses; only minutes from the LIRR..</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 3 <i class="fas fa-bath ps-3"></i> 2 <i class="fas fa-expand-arrows-alt ps-3 "></i> 150ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person3-27-120x120.jpg" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">alessandra rosales</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/interior-4-800x623.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/rent.png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Winchester, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Townhouse for Rent</h5>
+            <h5 class="card-title">230 $ / month</h5>
+            <p class="card-text">Mineral Reserves: 2008 core drilling and testing (on just 60 of the 1,100 acres) proved 30..</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 2 <i class="fas fa-bath ps-3"></i> 5 <i class="fas fa-expand-arrows-alt ps-3 "></i> 29,000ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person7-21-120x120.png" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">michaela finney</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/interior35.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/sale (1).png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Downtown, new york</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Awesome Family Apartment</h5>
+            <h5 class="card-title">3.000.000 $</h5>
+            <p class="card-text">Mckinley Hill is situated inside Fort Bonifacio which is a 50 hectares owned by Megaworld. ...</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 3 <i class="fas fa-bath ps-3"></i> 2 <i class="fas fa-expand-arrows-alt ps-3 "></i> 1,300ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person-21-120x120.jpg" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">carlos dobarro</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/interior38.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/rent.png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Winchester, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Villa with Amazing View</h5>
+            <h5 class="card-title">800 $ / month</h5>
+            <p class="card-text">Downtown Frederick hot spot. Top location for local entertainment. All fixtures are includ ...</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 2 <i class="fas fa-bath ps-3"></i> 4 <i class="fas fa-expand-arrows-alt ps-3 "></i> 500ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person8-1-1-120x120.png" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">elana peria</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/interior3-5.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/rent.png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Downtown, chicago</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">family home for rent</h5>
+            <h5 class="card-title">800 $ / month</h5>
+            <p class="card-text">Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood..</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 2 <i class="fas fa-bath ps-3"></i> 4 <i class="fas fa-expand-arrows-alt ps-3 "></i> 500ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person3-27-120x120.jpg" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">alessandra rosales</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/house4-1.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/sale (1).png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> The Strip, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">gorgeous studio for sale</h5>
+            <h5 class="card-title">3.500.000 $</h5>
+            <p class="card-text">Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood..</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 3 <i class="fas fa-bath ps-3"></i> 4 <i class="fas fa-expand-arrows-alt ps-3 "></i> 1,300ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person-21-120x120.jpg" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">carlos dobarro</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6 col-lg-4  mb-5 " ><!-- start col -->
+
+        <div class="card CD"  ><!-- start card -->
+          <div class="imcontant">
+          <img src="imges/interior47.jpg" class="card-img-top cimg  " alt="cartlon" draggable="false" height="300" width="100">
+          <img src="imges/rent.png" class="sale-badge" alt="">
+          <div class="img-info ps-1 text-light">
+            <p><i class="fas fa-map-marker-alt"></i> Downtown, Las Vegas</p>
+          </div>
+        </div>
+          <div class="card-body pb-0">
+            <h5 class="card-title">Gorgeous Studio for Rent</h5>
+            <h5 class="card-title">700 $ / month</h5>
+            <p class="card-text">Mckinley Hill is situated inside Fort Bonifacio which is a 50 hectares owned by Megaworld. ...</p>
+            <p class="card-text icons "><i class="fas fa-bed"></i> 3 <i class="fas fa-bath ps-3"></i> 3 <i class="fas fa-expand-arrows-alt ps-3 "></i> 1,200ft<sup>2</sup> </p>
+            <div class="Sales-Person-info d-flex justify-content-between  border-top p-1 "><!-- start Sales-Person-info -->
+              <div class="sales-person-name d-flex">
+                <img src="imges/person7-21-120x120.png" class="rounded-circle" alt="Cinque Terre" width="40" height="40">
+              <p class="p-1 fs-5">michaela finney</p>
+              </div>
+              <div class="sales-btns p-1 fs-4">
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus px-1"></i>
+                <i class="fas fa-heart"></i>
+
+              </div>
+            </div><!-- end Sales-Person-info -->
+          </div>
+        </div><!-- end card -->
+
+      </div><!-- end col -->
+
+    </div><!-- end row -->
+
+    
+  
+  </div><!-- end container -->
+
+</section><!-- end sec6 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC6--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="break-line2" style="height: 50vh;">
+
+
+</section><!-- end break-line -->
+
+<!--/////////////////////////////////////////////////////^--BREAK-LINE2--^//////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec7 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="sec-head mt-4 p-5 mb-3 bg-primary text-white text-center rounded text-uppercase"><!-- start jumbotron -->
+
+      <h1 id="SER" class="sec-head-t">our services</h1>
+      
+    </div><!-- end jumbotron -->
+
+  </div><!-- end container-fluid -->
+
+  <div class="container">
+
+    <div class="row"><!-- start row -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/house ic.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">home loans</h3>
+            <p class="card-text fs-5">we offer you free consultancy to get a loan.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/contract.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">sell your home</h3>
+            <p class="card-text fs-5">we sell your home at the best market price.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/legal-hammer.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">legal services</h3>
+            <p class="card-text fs-5">expert legal help for all related property items.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/Home inspection.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">home inspection</h3>
+            <p class="card-text fs-5">we make sure you get what you were promised.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/data.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">evaluation</h3>
+            <p class="card-text fs-5">we offer you free evaluation to get a mortgage loan.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-5"><!-- start col service -->
+
+        <div class="card p-3 services"><!-- start services -->
+          <div class="img-content-ser rounded-circle   d-flex align-items-center justify-content-center m-3" style="width: 100px; height: 100px;">
+            <img src="imges/browser.png" class="card-img-top " alt="..." style="height: 50px; width: 50px;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title mb-5">hotoshoot</h3>
+            <p class="card-text fs-5">we prepare your home visual presentation.</p>
+            
+          </div>
+        </div><!-- end services -->
+
+      </div><!-- end col service -->
+
+    </div><!-- end row -->
+
+  </div>
+
+</section>
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec8 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="sec-head mt-4 p-5 mb-3 bg-primary text-uppercase text-white text-center rounded"><!-- start jumbotron -->
+
+      <h1 class="sec-head-t">thanks for our team</h1>
+      
+    </div><!-- end jumbotron -->
+
+  </div><!-- end container-fluid -->
+
+  <div class="container"><!-- start container for cards -->
+
+    <div class="row justify-content-center"><!-- start card overlay contant -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3 position-relative " ><!-- start col card -->
+        <div class="card cdo bg-dark text-white "><!-- start card overlay -->
+          <img class="card-img-top" src="imges/team 1.jpg" alt="Card image"  height="550">
+          <div class="cdoo card-img-overlay " style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="cdoo-contant"><!-- start cdoo-contant -->
+            <h4 class="card-title">all thanks and appreciation</h4>
+            <p class="card-text"><i class="far fa-clock"></i> february 10, 2024</p>
+            
+          </div><!-- end cdoo-contant -->
+        </div>
+        <div class="cdoo-contant position-absolute bottom-0 d-flex"><!-- start cdoo-contant -->
+          <div class="min-img">
+          <img src="imges/team1-2.jpg" class="rounded-circle img-thumbnail  bottom-0 start-0 ms-3 mb-3" style="height: 140px; width: 130px;" alt="" >
+        </div>
+        <div class="min-img-contant align-self-center ps-3">
+          <p class="card-text">oliver addam</p>
+          <p class="card-text">architect</p>
+          
+        </div>
+        </div><!-- end cdoo-contant -->
+        </div><!-- end card overlay -->
+      </div><!-- end col card -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3 position-relative " ><!-- start col card -->
+        <div class="card cdo bg-dark text-white "><!-- start card overlay -->
+          <img class="card-img-top" src="imges/mohamed khaled 3.jpg" alt="Card image" height="550">
+          <div class="cdoo card-img-overlay " style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="cdoo-contant"><!-- start cdoo-contant -->
+            <h4 class="card-title">all thanks and appreciation</h4>
+            <p class="card-text"><i class="far fa-clock"></i> february 10, 2024</p>
+            
+          </div><!-- end cdoo-contant -->
+        </div>
+        <div class="cdoo-contant position-absolute bottom-0 d-flex"><!-- start cdoo-contant -->
+          <div class="min-img">
+          <img src="imges/mohamed khaled11.jpg" class="rounded-circle img-thumbnail  bottom-0 start-0 ms-3 mb-3" style="height: 140px; width: 130px;" alt="">
+        </div>
+        <div class="min-img-contant align-self-center ps-3">
+          <p class="card-text">mohamed khaled kamal</p>
+          <p class="card-text">frontend developer</p>
+          
+        </div>
+        </div><!-- end cdoo-contant -->
+        </div><!-- end card overlay -->
+      </div><!-- end col card -->
+
+      <div class="col-12 col-md-6 col-lg-4 mb-3 position-relative " ><!-- start col card -->
+        <div class="card cdo bg-dark text-white "><!-- start card overlay -->
+          <img class="card-img-top" src="imges/team2.jpg" alt="Card image" height="550">
+          <div class="cdoo card-img-overlay " style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="cdoo-contant"><!-- start cdoo-contant -->
+            <h4 class="card-title">all thanks and appreciation</h4>
+            <p class="card-text"><i class="far fa-clock"></i> february 10, 2024</p>
+            
+          </div><!-- end cdoo-contant -->
+        </div>
+        <div class="cdoo-contant position-absolute bottom-0 d-flex"><!-- start cdoo-contant -->
+          <div class="min-img">
+          <img src="imges/team2.jpg" class="rounded-circle img-thumbnail  bottom-0 start-0 ms-3 mb-3" style="height: 140px; width: 130px;" alt="" >
+        </div>
+        <div class="min-img-contant align-self-center ps-3">
+          <p class="card-text">debra jaycob</p>
+          <p class="card-text">engineer decorations</p>
+          
+        </div>
+        </div><!-- end cdoo-contant -->
+        </div><!-- end card overlay -->
+      </div><!-- end col card -->
+
+
+    </div><!-- end card overlay contant -->
+
+
+  </div><!-- end container for cards -->
+
+  
+
+</section><!-- end sec7 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC7--^//////////////////////////////////////////////////////////////-->
+
+<hr class="line">
+
+<!--/////////////////////////////////////////////////////////^--HR--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec9 text-capitalize">
+
+  <div class="container-fluid">
+
+    <div class="sec-head mt-4 p-5 mb-3 bg-primary text-uppercase text-white text-center rounded"><!-- start jumbotron -->
+
+      <h1 class="sec-head-t">latest news</h1>
+      
+    </div><!-- end jumbotron -->
+
+  </div><!-- end container-fluid -->
+
+  <div class="container">
+
+    <div class="postcard pstcd  card mb-3  overflow-hidden "  ><!-- start postcard -->
+      <div class="row g-0 "> <!-- postcard row -->
+        
+        <div class="img-cont overflow-hidden  col-12 col-lg-3" style="height: 363px;"><!-- start postcard-img-contant -->
+          <img src="imges/los angles.jpg" class="post-img align-end  img-fluid rounded-end w-100 h-100"  alt="...">
+        </div><!-- end postcard-img-contant -->
+        <div class="col-12  col-lg-9"><!-- start postcard col -->
+          <div class="post-body card-body p-5"><!-- start postcard body -->
+            <h2 class="card-title"><a href="#" class="postcard-t text-dark text-decoration-none">los angeles</a></h2>
+            <p class="date card-text"><i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2023</p>
+            <div class="post-bar pobar1 my-3 rounded-pill bg-success" style="width: 50px; height: 7px;"></div><!-- bar -->
+            <p class="card-text mb-5">los angeles has seen a significant increase in home prices in 2023,
+            with single-family home prices rising 15% on average. This increase is attributed to several factors,
+            including increased demand for homes and a shortage of supply, as well as rising construction costs.</p>
+            <div class="post-buttons d-flex "><!-- start postcard buttons -->
+              <a href="#" class="btn btn-outline-light text-secondary"><i class="far fa-bookmark"></i> Bookmark</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fab fa-readme"></i> Read More</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fas fa-newspaper"></i> Full Coverage</a>
+            </div><!-- end postcard buttons -->
+          </div><!-- end postcard body -->
+        </div><!-- end postcard col -->
+      </div> <!-- end postcard row -->
+    </div><!-- end postcard -->
+
+    <div class="postcard card mb-3  overflow-hidden "  ><!-- start postcard -->
+      <div class="row g-0 flex-row-reverse"> <!-- postcard row -->
+        
+        <div class="img-cont overflow-hidden  col-12 col-lg-3" style="height: 363px;" ><!-- start postcard-img-contant -->
+          <img src="imges/newyork.jpg" class="post-img rev align-end  img-fluid rounded-end w-100 h-100"  alt="...">
+        </div><!-- end postcard-img-contant -->
+        <div class="col-12  col-lg-9"><!-- start postcard col -->
+          <div class="post-body card-body p-5 "><!-- start postcard body -->
+            <h2 class="card-title"><a href="#" class="postcard-t text-dark t2 text-decoration-none">new york</a></h2>
+            <p class="date card-text"><i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2023</p>
+            <div class="post-bar pobar2 my-3 rounded-pill bg-primary " style="width: 50px; height: 7px;"></div><!-- bar -->
+            <p class="card-text mb-5">Manhattan, a borough of New York City, has seen a decrease in apartment prices in 2023,
+            with apartment prices falling 5% on average. This decrease is attributed to several factors,
+            including an increase in the supply of apartments and rising interest rates.</p>
+            <div class="post-buttons d-flex "><!-- start postcard buttons -->
+              <a href="#" class="btn btn-outline-light text-secondary"><i class="far fa-bookmark"></i> Bookmark</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fab fa-readme"></i> Read More</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fas fa-newspaper"></i> Full Coverage</a>
+            </div><!-- end postcard buttons -->
+          </div><!-- end postcard body -->
+        </div><!-- end postcard col -->
+      </div> <!-- end postcard row -->
+    </div><!-- end postcard -->
+
+
+    <div class="postcard pstcd card mb-3  overflow-hidden "  ><!-- start postcard -->
+      <div class="row g-0 "> <!-- postcard row -->
+        
+        <div class="img-cont overflow-hidden  col-12 col-lg-3" style="height: 350px;" ><!-- start postcard-img-contant -->
+          <img src="imges/Chicago (2).jpg" class="post-img align-end  img-fluid rounded-end w-100 h-100"  alt="...">
+        </div><!-- end postcard-img-contant -->
+        <div class="col-12  col-lg-9"><!-- start postcard col -->
+          <div class="post-body card-body p-5"><!-- start postcard body -->
+            <h2 class="card-title"><a href="#" class="postcard-t text-dark t3 text-decoration-none">chicago</a></h2>
+            <p class="date card-text"><i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2023</p>
+            <div class="post-bar pobar3 my-3 rounded-pill bg-secondary" style="width: 50px; height: 7px;"></div><!-- bar -->
+            <p class="card-text mb-5">MONOLINE has announced the launch of a $5 billion real estate project in Chicago.
+            The project includes a mix of residential, commercial, and administrative units,
+            and is located in a prime location in the downtown area.</p>
+            <div class="post-buttons d-flex "><!-- start postcard buttons -->
+              <a href="#" class="btn btn-outline-light text-secondary"><i class="far fa-bookmark"></i> Bookmark</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fab fa-readme"></i> Read More</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fas fa-newspaper"></i> Full Coverage</a>
+            </div><!-- end postcard buttons -->
+          </div><!-- end postcard body -->
+        </div><!-- end postcard col -->
+      </div> <!-- end postcard row -->
+    </div><!-- end postcard -->
+
+    <div class="postcard card mb-3  overflow-hidden "  ><!-- start postcard -->
+      <div class="row g-0 flex-row-reverse"> <!-- postcard row -->
+        
+        <div class="img-cont overflow-hidden  col-12 col-lg-3" style="height: 363px;" ><!-- start postcard-img-contant -->
+          <img src="imges/san fransisco.jpg" class="post-img rev align-end  img-fluid rounded-end w-100 h-100"  alt="...">
+        </div><!-- end postcard-img-contant -->
+        <div class="col-12  col-lg-9"><!-- start postcard col -->
+          <div class="post-body card-body p-5 "><!-- start postcard body -->
+            <h2 class="card-title"><a href="#" class="postcard-t text-dark t4 text-decoration-none">san francisco</a></h2>
+            <p class="date card-text"><i class="fas fa-calendar-alt mr-2"></i> Mon, May 25th 2023</p>
+            <div class="post-bar pobar4 my-3 rounded-pill bg-warning " style="width: 50px; height: 7px;"></div><!-- bar -->
+            <p class="card-text mb-5">San Francisco has seen a significant increase in home prices in 2023,
+            with single-family home prices rising 20% on average.
+            This increase is attributed to several factors,
+            including increased demand for homes and a shortage of supply, as well as rising construction costs</p>
+            <div class="post-buttons d-flex "><!-- start postcard buttons -->
+              <a href="#" class="btn btn-outline-light text-secondary"><i class="far fa-bookmark"></i> Bookmark</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fab fa-readme"></i> Read More</a>
+              <a href="#" class="btn btn-outline-light text-secondary ms-2"><i class="fas fa-newspaper"></i> Full Coverage</a>
+            </div><!-- end postcard buttons -->
+          </div><!-- end postcard body -->
+        </div><!-- end postcard col -->
+      </div> <!-- end postcard row -->
+    </div><!-- end postcard -->
+                      
+    
+  </div><!-- end container -->
+
+</section><!-- end sec9 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC8--^//////////////////////////////////////////////////////////////-->
+
+<section class="sec10 text-capitalize">
+
+  <div class="container container-fluid-sm pb-5 pt-5">
+
+    <h2 id="CONT" class="subscribe fw-bold text-center text-uppercase">subscribe</h2>
+    <div class="row"><!-- start row -->
+
+      <div class="col-12 col-md-6 col-lg-3 mb-3"><!-- start col blogs -->
+
+        <div class="box bg-white overflow-hidden rounded"><!-- start box -->
+
+          <img class="img-fluid sub-pic" src="imges/facebook-884378_1920.png" alt="" />
+          <h4 class="p-3 text-primary text-uppercase">facebook</h4>
+          <button type="button" class="btn btn-primary mb-3 ms-3" data-bs-toggle="modal" data-bs-target="#SUB-f"><i class="fab fa-facebook"></i> subscribe</button>
+
+          <div class="modal fade" id="SUB-f"><!--start Modal SUB  -->
+            <div class="modal-dialog"><!-- Start Modal-dialog -->
+              <div class="modal-content"><!-- Start Modal-content -->
+          
+                
+                <div class="modal-header"><!-- Start Modal-header -->
+                  <h4 class="modal-title"><i class="fbk fab fa-facebook"></i> subscribe </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div><!-- End Modal-header -->
+          
+                
+                <div class="modal-body"><!-- Start Modal-body -->
+
+                  <label for="email" class="form-label">email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <label for="password" class="form-label">password</label>
+                  <input type="password" class="form-control" id="password" placeholder="******">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                  </div>
+
+                </div><!-- End Modal-body -->
+          
+                
+                <div class="modal-footer d-flex justify-content-between"><!-- Start Modal-footer -->
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">login</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div><!-- End Modal-footer -->
+          
+              </div><!-- End Modal-content -->
+            </div><!-- End Modal-dialog -->
+          </div><!-- end Modal SUB -->
+
+        </div><!-- end box -->
+
+      </div><!-- end col blogs -->
+
+      <div class="col-12 col-md-6 col-lg-3 mb-3"><!-- start col blogs -->
+
+        <div class="box bg-white overflow-hidden rounded"> <!-- start box -->
+
+          <img class="img-fluid sub-pic" src="imges/twitter-icon-7727320_1920.png" alt="" />
+          <h4 class="p-3 text-info text-uppercase">twitter</h4>
+          <button type="button" class="btn btn-info text-white mb-3 ms-3" data-bs-toggle="modal" data-bs-target="#SUB-t"><i class="fab fa-twitter"></i> subscribe</button>
+
+          <div class="modal fade" id="SUB-t"><!--start Modal SUB  -->
+            <div class="modal-dialog"><!-- Start Modal-dialog -->
+              <div class="modal-content"><!-- Start Modal-content -->
+          
+                
+                <div class="modal-header"><!-- Start Modal-header -->
+                  <h4 class="modal-title"><i class="fab fa-twitter"></i> subscribe </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div><!-- End Modal-header -->
+          
+                
+                <div class="modal-body"><!-- Start Modal-body -->
+
+                  <label for="email" class="form-label">email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <label for="password" class="form-label">password</label>
+                  <input type="password" class="form-control" id="password" placeholder="******">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                  </div>
+
+                </div><!-- End Modal-body -->
+          
+                
+                <div class="modal-footer d-flex justify-content-between"><!-- Start Modal-footer -->
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal">login</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div><!-- End Modal-footer -->
+          
+              </div><!-- End Modal-content -->
+            </div><!-- End Modal-dialog -->
+          </div><!-- end Modal SUB -->
+
+        </div><!-- end box -->
+
+      </div><!-- end col blogs -->
+
+      <div class="col-12 col-md-6 col-lg-3 mb-3"><!-- start col blogs -->
+
+        <div class="box bg-white overflow-hidden rounded"><!-- start box -->
+
+          <img class="img-fluid sub-pic" src="imges/whats up.png" alt="" />
+          <h4 class="p-3 text-success text-uppercase">what's up</h4>
+          <button type="button" class="btn btn-success mb-3 ms-3" data-bs-toggle="modal" data-bs-target="#SUB-w"><i class="fab fa-whatsapp"></i> subscribe</button>
+
+          <div class="modal fade" id="SUB-w"><!--start Modal SUB  -->
+            <div class="modal-dialog"><!-- Start Modal-dialog -->
+              <div class="modal-content"><!-- Start Modal-content -->
+          
+                
+                <div class="modal-header"><!-- Start Modal-header -->
+                  <h4 class="modal-title"><i class="fab fa-whatsapp"></i> subscribe </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div><!-- End Modal-header -->
+          
+                
+                <div class="modal-body"><!-- Start Modal-body -->
+
+                  <label for="phonenumber" class="form-label">phone number</label>
+                  <input type="text" class="form-control" id="phonenumber" placeholder="+20+++++++">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                  </div>
+
+                </div><!-- End Modal-body -->
+          
+                
+                <div class="modal-footer d-flex justify-content-between"><!-- Start Modal-footer -->
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">login</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div><!-- End Modal-footer -->
+          
+              </div><!-- End Modal-content -->
+            </div><!-- End Modal-dialog -->
+          </div><!-- end Modal SUB -->
+
+        </div><!-- end box -->
+      </div><!-- end col blogs -->
+
+      <div class="col-12 col-md-6 col-lg-3 mb-3"> <!-- start blogs -->
+
+        <div class="box bg-white overflow-hidden rounded"><!-- start box -->
+
+          <img class="img-fluid sub-pic" src="imges/youtube-icon-6278264_1920.png" alt="" />
+          <h4 class="p-3 text-danger text-uppercase">youtube</h4>
+          <button type="button" class="btn btn-danger mb-3 ms-3" data-bs-toggle="modal" data-bs-target="#SUB-y"><i class="fab fa-youtube"></i> subscribe</button>
+
+          <div class="modal fade" id="SUB-y"><!--start Modal SUB  -->
+            <div class="modal-dialog"><!-- Start Modal-dialog -->
+              <div class="modal-content"><!-- Start Modal-content -->
+          
+                
+                <div class="modal-header"><!-- Start Modal-header -->
+                  <h4 class="modal-title"><i class="fab fa-youtube"></i> subscribe </h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div><!-- End Modal-header -->
+          
+                
+                <div class="modal-body"><!-- Start Modal-body -->
+
+                  <label for="email" class="form-label">email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <label for="password" class="form-label">password</label>
+                  <input type="password" class="form-control" id="password" placeholder="******">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">remember me</label>
+                  </div>
+
+                </div><!-- End Modal-body -->
+          
+                
+                <div class="modal-footer d-flex justify-content-between"><!-- Start Modal-footer -->
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">login</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div><!-- End Modal-footer -->
+          
+              </div><!-- End Modal-content -->
+            </div><!-- End Modal-dialog -->
+          </div><!-- end Modal SUB -->
+
+        </div><!-- end box -->
+
+      </div> <!-- end col blogs -->
+
+    </div><!-- end row -->
+  </div> <!-- end container -->
+
+
+</section><!-- end sec10 -->
+
+<!--/////////////////////////////////////////////////////////^--SEC9--^//////////////////////////////////////////////////////////////-->
+
+<footer class="footer pt-5 pb-5 text-white-50   text-md-start  text-capitalize">
+  
+    <div class="container"><!-- start container -->
+
+      <div class="row ">
+
+        <div class="col-12 col-lg-3 p-2  border-top border-bottom border-secondary border-3"><!-- start mono copyright -->
+          <div class="info mb-5 text-center">
+            <img  src="imges/mono 1.png" alt="" class="footer-logo mb-4" />
+            <p class="mb-5">
+              thank you for visiting our website and we hope to live up to your expectations
+              contact us now for more information
+              we are happy to serve you!
+            </p>
+            <div class="copyright">
+              Created By <span class="text-info">mohamed khaled</span>
+              <div>&copy; 2024 - <span class="text-warning text-uppercase">monoline</span></div>
+            </div>
+          </div>
+        </div><!-- end mono copyright -->
+
+        <div class="col-12 col-lg-3 p-2  border-top border-bottom border-secondary border-3"><!-- start mono links -->
+          <div class="links text-center">
+            <img  src="imges/mono links.png" alt="" class="footer-logo mb-4" />
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Home</li>
+              <li>Our Services</li>
+              <li>Portfolio</li>
+              <li>Testimonials</li>
+              <li>Support</li>
+              <li>Terms and Condition</li>
+            </ul>
+          </div>
+        </div><!-- end mono links -->
+
+        <div class="col-12 col-lg-3 p-2  border-top border-bottom border-secondary border-3"><!-- start mono about -->
+          <div class="links text-center">
+            <img  src="imges/mono about.png" alt="" class="footer-logo mb-4" />
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li>Sign In</li>
+              <li>Register</li>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div><!-- end mono about -->
+
+        <div class="col-12 col-lg-3 p-2  border-top border-bottom border-secondary border-3"><!-- start mono contact -->
+          <div class="contact text-center">
+            <img  src="imges/mono contact.png" alt="" class="footer-logo mb-4" />
+            <h5 class="text-light">Contact Us</h5>
+            <p class=" mt-3 mb-3">Get in touch with us via mail phone.We are waiting for your call or message</p>
+            <button type="button" class="btn btn-danger text-warning rounded-pill w-100 mb-3">mo7med.khaled22@gmail.com</button>
+            <ul class="links d-flex list-unstyled justify-content-around fs-3">
+              <li><a href="#" class="text-primary"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="text-info"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="text-success"><i class="fab fa-whatsapp"></i></a></li>
+              <li><a href="#" class="text-danger"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          
+          </div>
+        </div><!-- end mono contact -->
+
+      </div><!-- end row -->
+
+    </div><!-- end container -->
+  
+</footer><!-- end footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
